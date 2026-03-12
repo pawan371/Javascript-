@@ -36,18 +36,21 @@ console.log(c)
 
 
 //number
-let a=10;
-let b=2.36;
-console.log(a,b);
-console.log(typeof a);
+//let a=10;
+//let b=2.36;
+//console.log(a,b);
+//console.log(typeof a);
 
 
 //string
 
-let c="Strike is coming ";
+let str="Strike is coming ";
 let d='Anjali';
-console.log(c,d);
+console.log(str,d);
 console.log(typeof d);
+//str[0]=M;//imputable (not change value)
+console.log(str[0]);
+
 
 //boolean
 let login=true;
@@ -100,7 +103,9 @@ let obj={
   category:'gen'
 }
 console.log(obj);
-
+console.log(obj.age);
+obj.name="Tiwari";//mutable object
+console.log(obj);
 //function
 let s = function add(){
   console.log("Hello");
@@ -111,3 +116,16 @@ let s = function add(){
 //in javascript function can store in a variable
 s();
 console.log(typeof s);
+
+
+let a=10;
+let b=a;
+
+b=20;
+console.log(a,b);//original location ko change nhi karta new copy bna deta hai 
+
+let obj2=obj;
+obj2.name="Rohan";
+obj2.age=21;
+console.log(obj);//same data ko copy krte
+
