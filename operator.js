@@ -1,4 +1,4 @@
 //Operator
 //Arithematic 
 
-console.log(2+40);
+console.log(2+40)
